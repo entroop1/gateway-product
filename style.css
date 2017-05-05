@@ -1,0 +1,145 @@
+@import {
+    url(https://fonts.googleapis.com/css?family=Open+Sans)
+}
+
+:root {
+    --green: #62bb46;
+    --navy: #144576;
+    --blue: #3b9cfb;
+    --lightblue: #71cef5;
+    --dark: #3c3b3a;
+    --medium: #818181;
+    --light: #e2e2e2;
+    --verylight: #f7f7f7;
+    --turq: #21bdb7;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: #ededee;
+
+}
+
+.wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 25%);
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1370px;
+}
+
+.line {
+    width:100%;
+    height:1px;
+    background-color: var(--light);
+}
+
+/* HERO */
+
+.hero {
+    background-color: #ededee;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-img {
+    margin-top: 30vh;
+    grid-column: 2 / 6;
+    height: 50%;
+}
+
+.hero-gateway {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -50px;
+}
+
+.hero-labels {
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.label {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--lightblue);
+}
+
+.le {
+    background-color: var(--navy);
+}
+
+.hero-cart {
+    grid-column: 8/12;
+    margin-top: 20vh;
+}
+
+.add-to-cart {
+    padding:48px 48px 0px 48px;
+    margin-top: 48px;
+    background-color: white;
+    min-height: 200px;
+    border: 1px solid;
+    border-color: var(--light);
+}
+
+/* GATEWAY INTRO */
+
+.gateway-intro{
+    width:100vw;
+    height:20vh;
+}
+
+.gateway-intro .wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .line{
+    margin-bottom:100px;
+}
+
+#scene {
+        pointer-events: all;
+
+    display:flex;
+    flex-direction: column;
+}
+.intro-img{
+    margin-top:100px;
+    min-width:300px;}
+
+.intro-gateway {
+    position:absolute;
+}
+
+.intro-total {
+    position:absolute;
+    margin-left:-5%;
+    margin-top:100px;
+}
+
+.intro-zones{
+
+    position:absolute;
+    margin-left:200px;
+}
+
+.bg-chart {
+
+    margin-left:-45%;
+    position:absolute;
+}
