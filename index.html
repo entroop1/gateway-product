@@ -2,15 +2,16 @@
 <html lang="">
 
 <head>
-   <meta name="apple-mobile-web-app-capable" content="yes">
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <title>Untitled Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="typo.css">
-           
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 
@@ -18,12 +19,10 @@
 
 <body>
     <script>
+        var scene = $('#scene').get(0)
 
-    var scene = $('#scene').get(0)
-
-    var parallax = new Parallax(scene)
-
-        </script>
+        var parallax = new Parallax(scene)
+    </script>
 
     <div class="site-header">
         <div class="header-wrapper">
@@ -31,9 +30,7 @@
                 <img src="img/logo-2.svg" alt="kontakt.io">
             </div>
             <div class="header-nav">
-                <div class="button buy">
-                    <a href="https://testwebpage.kontakt.io/products-and-solutions/why-kontakt-io/">Contact Sales</a>
-                </div>
+                <a href="#" class="button">Contact Sales</a>
                 <ul id="nav-links">
                     <li class="menu-item">
                         <a href="https://testwebpage.kontakt.io/products-and-solutions/why-kontakt-io/">Why Kontakt.io</a>
@@ -51,6 +48,7 @@
                         <a href="https://testwebpage.kontakt.io/products-and-solutions/why-kontakt-io/">Why Kontakt.io</a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </div>
@@ -88,7 +86,7 @@
                 <div class="line"></div>
                 <h2>Tailored software</h2>
                 <h3>Gateways track stuff, combined with our software modules is where magic happens</h5>
-                    <div id="scene" >
+                    <div id="scene">
                         <div class="layer bg-chart">
                             <img src="img/chart-1.png" alt="">
                         </div>
@@ -104,10 +102,40 @@
                             </div>
                         </div>
                     </div>
+                    <div class="gateway-perks">
+                        <div class="perk low-cost">
+                            <img src="img/battery.svg" alt="">
+                            <h5>Low Cost</h5>
+                            <p>Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
+                        </div>
+                        <div class="line-v"></div>
+                        <div class="perk easy-int">
+                            <img src="img/battery.svg" alt="">
+                            <h5>Low Cost</h5>
+                            <p>Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
+                        </div>
+                        <div class="line-v"></div>
+                        <div class="perk no-hassle">
+                            <img src="img/battery.svg" alt="">
+                            <h5>Low Cost</h5>
+                            <p>Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="software-module">
+                <div class="le-p">
+                    <div class="wrapper">
+                        <div class="le-info">
+                            <h2>Location Engine</h2>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ut augue diam. Quisque at mi non lacus volutpat accumsan a non sem. Curabitur vel tortor eget purus sagittis condimentum et ac nunc. Phasellus luctus, leo sed dignissim elementum, purus erat ullamcorper erat, ut gravida lacus nibh id diam. Mauris vitae elit vel elit imperdiet tempor at id purus. Duis eleifend, orci ut ultrices imperdiet.</p>
+                        </div>
+                        <div class="pricing-table"></div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
-
 
 
 </body>
