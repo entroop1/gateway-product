@@ -123,7 +123,6 @@ a.button {
 
 .gateway-intro{
     width:100vw;
-    height:20vh;
 }
 
 .gateway-intro .wrapper{
@@ -206,4 +205,19 @@ a.button {
     grid-column:7/11;
     min-height:350px;
     background-color: white;
+}
+
+
+/* FM */
+
+/* Features */
+
+.features-module .wrapper{
+    display:flex;
+    flex-direction: column;
+}
+.feature-list{
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
 }
