@@ -22,7 +22,7 @@ li {
 }
 
 ul {
-    padding: 0
+    padding: 0;
 }
 
 a.button {
@@ -278,8 +278,14 @@ input::placeholder {
 
 .intro-total {
     position: absolute;
-    margin-left: -5%;
-    margin-top: 100px;
+    margin-left: -3.5%;
+    margin-top: 00px;
+}
+
+.intro-now {
+    position: absolute;
+    margin-left: -10%;
+    margin-top: 140px;
 }
 
 .intro-zones {
@@ -288,6 +294,7 @@ input::placeholder {
 }
 
 .bg-chart {
+    padding-top:50px;
     position: absolute;
 }
 
@@ -317,8 +324,9 @@ input::placeholder {
 
 .reveal.start {
     animation-name: rev;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
+    animation-delay:.5s;
 }
 
 
@@ -326,21 +334,37 @@ input::placeholder {
 
 .gateway-perks {
     height: auto;
-    box-sizing: border-box;
 }
+
+.perk-list{
+    display:flex;
+    align-content: flex-start;
+}
+
 
 .gateway-perks>.wrapper {
     display: flex;
+        align-content: flex-start;
+
 }
 
+.with-lines{
+    border-right:1px solid;
+    border-left:1px solid;
+    border-color: var(--light);
+    padding-left:48px;
+    padding-right:24px;
+    margin-right:48px;
+    margin-left:24px;
+}
 .perk img {
     width: auto;
     margin-bottom: 18px;
 }
 
 p.small {
-    font-size: 14pt;
-    line-height: 22pt;
+    font-size: 12pt;
+    line-height: 18pt;
 }
 
 
@@ -366,7 +390,7 @@ p.small {
 
 .le-p li::before {
     content: "• ";
-    color: white;
+    color: var(--turq);
 }
 
 .le-p-img {
@@ -400,13 +424,14 @@ p.small {
     justify-content: center;
 }
 
-.le-info .button {
-    background-color: var(--turq);
-    align-self: flex-start;
+.le-info .button-hollow {
+    margin-top:40px;
+
 }
 
 .le-info p {
     color: white;
+    margin-top:24px;
 }
 
 .pr-tb-lm {
@@ -455,13 +480,16 @@ p.small {
 
 .fm-info p {
     color: var(--navy);
+        margin-top:24px;
+
 }
 
-.fm-info>.button {
-    align-self: flex-start;
+.fm-info>.button-hollow {
+    margin-top:40px;
 }
 
 .fm-p li {
+    color:var(--navy);
     list-style: none;
     padding-left: 1em;
     text-indent: -.7em;
@@ -585,10 +613,10 @@ p.small {
 }
 
 .feature {
+    align-self: center;
     display: flex;
-    width: 10vw;
+    width: 7vw;
     flex-direction: column;
-    justify-content: center;
 }
 
 .feature h5 {
@@ -599,7 +627,7 @@ p.small {
 }
 
 .feature img {
-    width: 50px;
+    width: auto;
     align-self: center;
     order: 1;
 }
@@ -647,7 +675,7 @@ p.small {
 }
 
 .perk_s h3,
-p {
+p {   
     margin-right: 60px;
     margin-top: 10px;
 }
@@ -692,5 +720,6 @@ p {
 
 .faq {
     background: linear-gradient(to bottom, #ededee 50%, #818181 50%);
-    padding-bottom: 200px;
+    padding-bottom:100px;
+
 }
