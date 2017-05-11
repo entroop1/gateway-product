@@ -10,20 +10,29 @@
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="typo.css">
-
-
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css">    
+    <link rel="stylesheet" type="text/css" href="lib/aos-master/aos-master/dist/aos.css">
+    <script src="lib/aos-master/aos-master/dist/aos.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="inveiw.js"></script>
 
+    <script src="lib/jquery.parallax-scroll-master/jquery.parallax-scroll-master/js/jquery.easing.1.3.js"></script>
+        <script src="lib/jquery.parallax-scroll-master/jquery.parallax-scroll-master/js/jquery.parallax-scroll.js"></script>
+    
 
 </head>
 
 <body>
     <script>
-        var scene = $('#scene').get(0)
+        AOS.init({
+            offset: 100,
+            duration: 700,
+            easing: 'easy-ease',
+            delay: 50,
+            once: 'true',
 
-        var parallax = new Parallax(scene)
+        });
     </script>
-
     <div class="site-header">
         <div class="header-wrapper">
             <div class="logo-header">
@@ -56,10 +65,10 @@
         <div class="hero">
             <div class="wrapper">
                 <div class="hero-img">
-                    <div class="hero-gateway">
+                    <div class="hero-gateway" data-aos="fade-up">
                         <img src="img/gateway-hero.png">
                     </div>
-                    <div class="hero-labels">
+                    <div class="hero-labels" data-aos="fade-up" data-aos-delay="100">
                         <h5>Avaiable with:</h5>
                         <div class="le label">Location Engine</div>
                         <div class="fm label">Fleet Management</div>
@@ -68,16 +77,43 @@
                 </div>
                 <div class="hero-cart">
                     <div class="product-name">
-                        <h2>Gateway</h2>
+                        <h1>Gateway</h1>
                         <h3>The master device for managing beacons and tracking assets</h3>
                     </div>
                     <div class="add-to-cart">
-                        <h6>QUANTITY</h6>
-                        <div class="cart-form">
-                            <input class="quantity" type="text" name="name" placeholder="3">
+                        <div class="cart-options">
+                            <div class="cart-form">
+                                <label for="quantity">Quantity:</label>
+                                <input class="quantity" type="text" placeholder="3">
+                            </div>
+                            <div class="subscriptions">
+                                <label>*Subscriptions:</label>
+                                <label class="checkbox-name"><input type="checkbox" /> Location Engine</label>
+                                <label class="checkbox-name"><input type="checkbox" /> Fleet Management</label>
+                            </div>
                         </div>
-                        <div class="cart-price">$63.00</div>
+                        <div class="line"></div>
+                        <div class="sub-element">
+                            <h5>39</h5>
+                            <h5>1x Gateway </h5>
+                        </div>
+                        <div class="sub-element">
+                            <h5>39</h5>
+                            <h5>1x Fleet Management Subscription </h5>
+                            <h5>3months</h5>
+                        </div>
+                        <div class="sub-element">
+                            <h5>39</h5>
+                            <h5>1x Fleet Management Subscription </h5>
+                            <h5>3months</h5>
+                        </div>
+                        <div class="line"></div>
+                        <div class="cart-summary">
+                            <div class="cart-price">$63.00</div>
+                            <a href="#" class="button">Add to Cart </a>
+                        </div>
                     </div>
+                    <h6>*Gatewas are sold only with at least 1 subscription type</h5>
                 </div>
             </div>
         </div>
@@ -86,48 +122,59 @@
                 <div class="line"></div>
                 <h2>Tailored software</h2>
                 <h3>Gateways track stuff, combined with our software modules is where magic happens</h5>
-                    <div id="scene">
-                        <div class="layer bg-chart">
-                            <img src="img/chart-1.png" alt="">
-                        </div>
+
+                    <div id class="scene">
                         <div class="layer intro-img">
-                            <div class="layer intro-gateway">
+                            <div class="layer intro-gateway" data-aos="fade-up">
                                 <img src="img/gate-front.png" alt="">
                             </div>
-                            <div class="intro-total">
-                                <img src="img/total.png" alt="">
+                            <div class="intro-total" data-aos="fade-up" data-aos-delay="200" >
+                                <img src="img/total.png" alt="" data-parallax='{"y" : -80 }'>
                             </div>
-                            <div class="intro-zones">
-                                <img src="img/zones.png" alt="">
+                            <div class="intro-zones" data-aos="fade-up" data-aos-delay="300">
+                                <img src="img/zones.png" alt="" data-parallax='{"y" : -40 }'>
                             </div>
-                        </div>
-                    </div>
-                    <div class="gateway-perks">
-                        <div class="perk low-cost">
-                            <img src="img/battery.svg" alt="">
-                            <h5>Low Cost</h5>
-                            <p>Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
-                        </div>
-                        <div class="line-v"></div>
-                        <div class="perk easy-int">
-                            <img src="img/battery.svg" alt="">
-                            <h5>Low Cost</h5>
-                            <p>Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
-                        </div>
-                        <div class="line-v"></div>
-                        <div class="perk no-hassle">
-                            <img src="img/battery.svg" alt="">
-                            <h5>Low Cost</h5>
-                            <p>Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
                         </div>
                     </div>
             </div>
+            <div class="chart-group">
+                <div class="reveal"></div>
+                <div class="bg-chart">
+                    <img src="img/chart-1.png" alt="">
+                </div>
+                <div class="bg-chart">
+                    <img src="img/graf-2.png" alt="">
+                </div>
 
+
+            </div>
         </div>
-        <div class="software-module m-le">
-            <div class="le-p">
+
+        <div class="gateway-perks">
+            <div class="wrapper">
+                <div class="perk">
+                    <img src="img/perks/low.png" alt="">
+                    <h4>Low Cost</h4>
+                    <p class="small">Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
+                </div>
+                <div class="perk">
+                    <img src="img/perks/enter.png" alt="">
+                    <h4>Enterprise-ready</h4>
+                    <p class="small">Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
+                </div>
+                <div class="perk">
+                    <img src="img/perks/auto.png" alt="">
+                    <h4>Autonomous</h4>
+                    <p class="small">Build a Real-Time Location System at 1/5th the cost of competing positioning technologies such as active RFID or WiFi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="software-module m-le" >
+           <div class="le-p-img" data-parallax='{"y" : -80 }'></div>
+            <div class="le-p" data-aos="fade-up">
                 <div class="wrapper">
-                    <div class="le-info">
+                    <div class="le-info" data-aos="fade-up" data-aos-delay="100" >
                         <h2>Location Engine</h2>
                         <h5>software module</h5>
                         <p>An API that empowers you to build BLE-based asset tracking solutions cheaper and faster.</p>
@@ -136,12 +183,12 @@
                             <li>Data storage for analytics</li>
                             <li>Full access to Location Engine API and Kontakt.io Panel</li>
                         </ul>
-                        <a href="#" class="button">Buy NOW</a>
+                        <a href="#" class="button-hollow">read more</a>
                     </div>
-                    <div class="pricing-table pr-tb-lm">
+                    <div class="pricing-table pr-tb-lm" data-aos="fade-up" data-aos-delay="200">
                         <div class="tab">
-                            <button class="tablinks" onclick="openCity(event, 'London')">Quater Subscription</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">Annual Subscription</button>
+                            <button class="tablinks" onclick="openCity(event, 'pricing-terms')">Quater Subscription</button>
+                            <button class="tablinks selected" onclick="openCity(event, 'pricing-terms')">Annual Subscription</button>
                         </div>
                         <div class="pricing-terms">
                             <div class="period">
@@ -159,7 +206,8 @@
             </div>
 
         </div>
-        <div class="software-module m-fm">
+        <div class="software-module m-fm" >
+            <div class="fm-p-img" data-parallax='{"y" : -80 }'></div>
             <div class="fm-p">
                 <div class="wrapper">
                     <div class="pricing-table pr-tb-fm">
@@ -180,7 +228,7 @@
                         <a href="#" class="button">Buy NOW</a>
                     </div>
                     <div class="fm-info">
-                        <h2>Location Engine</h2>
+                        <h2>Fleet Management</h2>
                         <h5>software module</h5>
                         <p>An API that empowers you to build BLE-based asset tracking solutions cheaper and faster.</p>
                         <ul>
@@ -188,7 +236,7 @@
                             <li>Data storage for analytics</li>
                             <li>Full access to Location Engine API and Kontakt.io Panel</li>
                         </ul>
-                        <a href="#" class="button">Buy NOW</a>
+                        <a href="#" class="button-hollow">read more</a>
                     </div>
 
                 </div>
@@ -197,7 +245,7 @@
         </div>
         <div class="features-module">
             <div class="wrapper">
-                <h2>Software</h2>
+                <h4>Other Gateway Features</h4>
                 <div class="feature-list">
                     <div class="feature">
                         <h5>USB-powered </h5>
@@ -236,43 +284,61 @@
         <div class="perks">
             <div class="perk_s" data-aos="fade-up" data-aos-delay="300">
                 <img src="img/perks/p_config.png">
-                <h3>Preconfiguration</h3>
-                <p>Order beacons with preconfigured profiles, identifiers, and settings, so you don’t have to do it by yourself.</p>
+                <h4>Preconfiguration</h4>
+                <p class="small">Order beacons with preconfigured profiles, identifiers, and settings, so you don’t have to do it by yourself.</p>
                 <div class="line-s"></div>
             </div>
             <div class="perk_s" data-aos="fade-up" data-aos-delay="400">
                 <img src="img/perks/p_config.png">
-                <h3>Shipping</h3>
-                <p>We ship to any place in the world within a few business days. Shipping cost is always $20.</p>
+                <h4>Shipping</h4>
+                <p class="small">We ship to any place in the world within a few business days. Shipping cost is always $20.</p>
                 <div class="line-s"></div>
             </div>
             <div class="perk_s" data-aos="fade-up" data-aos-delay="500">
                 <img src="img/perks/p_config.png">
-                <h3>Made in EU</h3>
-                <p>Every single beacon—from the hardware to our in-house R&D, design, engineering, and operations—is made in Europe.</p>
+                <h4>Made in EU</h4>
+                <p class="small">Every single beacon—from the hardware to our in-house R&D, design, engineering, and operations—is made in Europe.</p>
                 <div class="line-s"></div>
             </div>
             <div class="perk_s" data-aos="fade-up" data-aos-delay="600">
                 <img src="img/perks/p_config.png">
-                <h3>Customization</h3>
-                <p>Get your beacons in white-label boxes, or print custom labels to help with deployment.</p>
+                <h4>Customization</h4>
+                <p  class="small">Get your beacons in white-label boxes, or print custom labels to help with deployment.</p>
                 <div class="line-s"></div>
             </div>
             <div class="perk_s" data-aos="fade-up" data-aos-delay="700">
                 <img src="img/perks/p_config.png">
-                <h3>Warranty</h3>
-                <p>All Kontakt.io beacons come with a 24-month warranty on the hardware, excluding batteries.</p>
+                <h4>Warranty</h4>
+                <p class="small">All Kontakt.io beacons come with a 24-month warranty on the hardware, excluding batteries.</p>
                 <div class="line-s"></div>
             </div>
             <div class="perk_s" data-aos="fade-up" data-aos-delay="800">
                 <img src="img/perks/p_config.png">
-                <h3>Services</h3>
-                <p>Focus on your core strengths instead of dealing with beacon deployment and maintenance by yourself. We’ll take care of your infrastructure.
+                <h4>Services</h4>
+                <p  class="small">Focus on your core strengths instead of dealing with beacon deployment and maintenance by yourself. We’ll take care of your infrastructure.
                 </p>
                 <div class="line-s"></div>
             </div>
         </div>
+        <div class="faq">
+            <div class="wrapper">
+                                            <h2>FAQ</h2>
 
+               <div class="questions">
+
+                <ul class="faq-ul">
+                    <li>How does the pricing work?</li>
+                                        <li>How does the pricing work?</li>
+
+                                   <li>How does the pricing work?</li>
+
+                                   <li>How does the pricing work?</li>
+
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
