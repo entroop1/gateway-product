@@ -10,6 +10,8 @@
     --turq: #21bdb7;
 }
 
+
+
 body {
     margin: 0 auto;
     font-family: 'chronica_prolight', sans-serif;
@@ -17,11 +19,13 @@ body {
     background-color: #ededee;
 }
 
+
 li {
     color: white;
 }
 
 ul {
+    width:100%;
     padding: 0;
 }
 
@@ -132,6 +136,7 @@ a.button-hollow {
     z-index: 2;
     grid-column: 8/12;
     margin-top: 15vh;
+    box-sizing: border-box;
 }
 
 
@@ -141,12 +146,14 @@ a.button-hollow {
     padding: 32px 32px 0px 32px;
     margin-top: 48px;
     background-color: white;
-    min-height: 200px;
     border: 1px solid;
     border-color: var(--light);
+    max-width 40%;
+
 }
 
 input[type=text] {
+    max-width:100%;
     height: 32px;
     border-radius: 4px;
     border: 1px solid;
@@ -154,7 +161,6 @@ input[type=text] {
     padding: 12px 0px 12px 0px;
     font-size: 20pt;
     line-height: 20pt;
-    width: 80px;
     box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -164,7 +170,8 @@ input[type=text] {
 }
 
 .cart-form {
-    width: 30%;
+    width: 40%;
+    margin-right:28px;
 }
 
 label {
@@ -227,13 +234,13 @@ input::placeholder {
     padding-top: 2px;
     padding-bottom: 2px;
     display: flex;
+    justify-content: space-between;
 }
 
 .sub-element>h5 {
     text-transform: none;
     font-size: 9pt;
     color: var(--medium);
-    margin-right: 40px;
 }
 
 
@@ -339,12 +346,13 @@ input::placeholder {
 .perk-list{
     display:flex;
     align-content: flex-start;
+    flex-wrap:nowrap; 
 }
 
 
 .gateway-perks>.wrapper {
     display: flex;
-        align-content: flex-start;
+    align-content: flex-start;
 
 }
 
@@ -381,6 +389,7 @@ p.small {
 }
 
 .le-p li {
+    width:100%;
     list-style: none;
     padding-left: 1em;
     text-indent: -.7em;
@@ -413,6 +422,8 @@ p.small {
 }
 
 .le-p .wrapper {
+            width:100%;
+
     align-self: center;
 }
 
@@ -434,7 +445,7 @@ p.small {
     margin-top:24px;
 }
 
-.pr-tb-lm {
+.pr-tb-le {
     grid-column: 6/10;
 }
 
@@ -442,6 +453,7 @@ p.small {
 /* FM */
 
 .fm-p-img {
+    margin-top:-150px;
     width: 100%;
     height: 700px;
     background-position: top left;
@@ -519,6 +531,8 @@ p.small {
 }
 
 .tab {
+    display: flex;
+    flex-direction: row;
     height: 80px;
 }
 
@@ -722,4 +736,6 @@ p {
     background: linear-gradient(to bottom, #ededee 50%, #818181 50%);
     padding-bottom:100px;
 
+}
+    
 }
