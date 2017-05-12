@@ -1,7 +1,15 @@
 /* HEADER */
 
-  
-        
+.header-nav > a.button-hollow {
+    border-color:var(--green);
+    color:var(--green);
+    float:right;
+    margin-left:50px;
+    margin-top:4px;
+    padding-top:12px;
+    padding-bottom:12px;
+}  
+
 .site-header{
     background-color:white;
     position:fixed;
@@ -26,10 +34,7 @@
     width: 150px;
     left:0px;}
 
-.header-nav .button{
-    float:right;
-    margin-left:50px;
-    margin-top:6px;}   
+ 
         
 ul#nav-links {
     list-style:none;
@@ -46,9 +51,11 @@ li.menu-item a{
     height:70px;
     padding-bottom:23px;
     padding-top:23px;
-    padding-left:10px;}
+    padding-left:10px;
+    padding-right:10px;}
 
 li.menu-item a:hover{
+    align-self: center;
     text-decoration: none;
-    color: var(--3c3b3a);
+    color: var(--dark);
     background-color:var(--verylight);}
